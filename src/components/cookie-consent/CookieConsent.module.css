@@ -1,0 +1,20 @@
+.wrapper {
+    min-height: 50px;
+    padding: 20px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: aliceblue;
+    font-weight: bold;
+
+    >div {
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    button{
+        padding: 10px 20px;
+    }
+}

@@ -1,7 +1,16 @@
+import { useCookies } from "react-cookie"
+import CookieConsent from "./components/CookieConsent"
+
 const App = () => {
-  return (
-    <div>App</div>
-  )
+	const [cookie] = useCookies(["cookieConsent"])
+
+	return <>
+  {
+      !cookie["cookieConsent"] ? 
+      <CookieConsent /> : 
+    <></>
+    }
+    </>
 }
 
 export default App
