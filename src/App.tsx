@@ -3,14 +3,7 @@ import CookieConsent from "./components/CookieConsent"
 
 const App = () => {
 	const [cookie] = useCookies(["cookieConsent"])
-
-	return <>
-  {
-      !cookie["cookieConsent"] ? 
-      <CookieConsent /> : 
-    <></>
-    }
-    </>
+	return <div>{!cookie["cookieConsent"] ? <CookieConsent /> : <></>}</div>
 }
 
 export default App
